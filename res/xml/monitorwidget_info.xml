@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 J.C. Jones, All Rights Reserved -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="146dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="900000"
+    android:initialLayout="@layout/enlighten_appwidget"
+    android:configure="net.pugsplace.enlightenmonitor.MonitorConfiguration">
+</appwidget-provider>

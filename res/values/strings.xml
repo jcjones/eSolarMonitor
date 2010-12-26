@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 J.C. Jones, All Rights Reserved -->
+
+<resources>
+    <string name="app_name">ESolar Monitor</string>
+    <string name="app_description">ESolar Monitor is a monitoring widget for solar power systems using the Enphase Enlighten® service. 
+    
+    Enlighten is a registered trademark of Enphase Energy. This application is not affiliated with or endorsed by Enphase Energy.</string>
+    
+    <string name="uri_scheme">esolarMonitorWidget</string>
+	
+	<string name="template_user_agent">"%s/%s (Linux; Android)"</string>
+    <string name="template_performance_url">"http://enlighten.enphaseenergy.com/public/systems/%s/array_viewer_performance_data.json"</string>
+
+    
+	<string name="widget_loading">Loading</string>
+	<string name="widget_error">Update In Progress</string>
+    <string name="widget_current"></string>
+    <string name="widget_today">Today: </string>
+    <string name="widget_week">Week: </string>
+    <string name="widget_month">Month: </string>
+    <string name="widget_lifetime">Lifetime: </string>
+    <string name="widget_lastUpdate">Last Updated: </string>
+    
+    <string name="config_title">Configure Widget</string>
+    <string name="config_save">Save</string>
+    <string name="config_about">About</string>
+    <string name="config_refresh">Refresh</string>
+    <string name="config_refresh_label">Refresh</string>
+    <string name="config_refresh_help">Choose the amount of time between periodic updates.</string>
+    
+    <string name="config_public_id_label">Public ID</string>
+    <string name="config_public_id_help">From your Enlighten system settings, you must check "Allow visitors to my system" and provide the last portion of the public access link in the above box.
+    
+    For example, given the public link of "http://enlighten.enphaseenergy.com/public/systems/1a2B3d4E", you would provide "1a2B3d4E" above.</string>
+    
+    <string name="about_title">About</string>
+    <string name="about_message">ESolar Monitor is a monitoring widget for solar power systems using the Enphase Enlighten® service. 
+    
+    Enlighten is a registered trademark of Enphase Energy. This application is not affiliated with or endorsed by Enphase Energy.</string>
+    
+    
+</resources>

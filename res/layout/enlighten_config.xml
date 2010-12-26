@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" style="@style/Config">
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></ScrollView>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/config_title" style="@style/Config.Title"/>
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/config_public_id_label" style="@style/Config.Label" /><EditText android:text="@string/config_public_id_label" android:id="@+id/config_installationId" android:layout_height="wrap_content" android:layout_gravity="right|fill_horizontal" android:layout_width="fill_parent"></EditText>
+	<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/config_public_id_help"></TextView>
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/config_refresh_label" style="@style/Config.Label" /><Spinner android:layout_height="wrap_content" android:id="@+id/config_refresh_spinner" android:layout_gravity="fill_horizontal" android:layout_width="fill_parent"></Spinner>
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/config_refresh_help"></TextView>
+	<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_about" android:id="@+id/config_about" android:layout_gravity="left"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/config_save" android:text="@string/config_save" android:layout_gravity="right"></Button></LinearLayout>
+	
+	
+	
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 J.C. Jones, All Rights Reserved -->
+
+<resources>
+
+	<style name="WidgetBackground">
+		<item name="android:background">@drawable/widget_bg</item>
+	</style>
+	<style name="ButtonBackground">
+		<item name="android:background">@android:color/transparent</item>
+	</style>
+
+	<style name="Text">
+		<item name="android:textSize">10sp</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+
+	<style name="Text.Power">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Text.Today">
+	</style>
+
+	<style name="Text.Week">
+	</style>
+
+
+	<style name="Text.Month">
+	</style>
+
+	<style name="Text.Lifetime">
+	</style>
+	
+	<style name="Text.LastUpdate">
+		<item name="android:textSize">8sp</item>
+		<item name="android:textStyle">italic</item>
+	</style>
+
+
+	<style name="Progress">
+		<item name="android:indeterminateOnly">true</item>
+		<item name="android:indeterminateDrawable">@drawable/progress_spin</item>
+		<item name="android:indeterminateBehavior">repeat</item>
+		<item name="android:indeterminateDuration">3500</item>
+	</style>
+	
+	<style name="Config">
+	</style>
+	
+	<style name="Config.Label">
+		<item name="android:textStyle">bold</item>
+		<item name="android:paddingTop">10px</item>
+	</style>
+
+	<style name="Config.Title">
+		<item name="android:textSize">30sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">?android:attr/textColorPrimary</item>
+	</style>
+
+</resources>

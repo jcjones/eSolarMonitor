@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 J.C. Jones, All Rights Reserved -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget_outer" android:orientation="horizontal"
+	style="@style/WidgetBackground" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:padding="6dip">
+	<LinearLayout android:id="@+id/widget_inner_vertical"
+		android:orientation="vertical" android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="0dp">
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:id="@+id/TopLine">
+			<TextView android:id="@+id/TodayLabel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/widget_today"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.Today" android:layout_marginTop="10dp"
+				android:layout_marginRight="5dp"></TextView>
+			<TextView android:text="@string/widget_loading"
+				android:layout_height="wrap_content" android:id="@+id/TodayWH"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.Today" android:layout_marginTop="10dp"
+				android:layout_width="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:id="@+id/NowLine">
+			<TextView android:id="@+id/PowerLabel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/widget_current"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.Power" android:layout_marginRight="5dp"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/Watts"
+				android:singleLine="true" android:ellipsize="end"
+				android:text="Watts" style="@style/Text.Power"></TextView>
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:id="@+id/StatLine">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/StatLabel"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.Week" android:text="Week" android:paddingRight="5px"></TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/StatValue"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.Month" android:text="99 kWh" android:paddingLeft="1px"></TextView>
+		</LinearLayout>
+		
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="horizontal" android:gravity="center_horizontal"
+			android:layout_width="fill_parent" android:id="@+id/LastUpdateLine">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/LastUpdateLabel"
+				android:singleLine="true" android:ellipsize="end" android:paddingRight="5px"
+				style="@style/Text.LastUpdate" android:text="@string/widget_lastUpdate"></TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/LastUpdate"
+				android:singleLine="true" android:ellipsize="end"
+				style="@style/Text.LastUpdate" android:text="12:09 pm"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/widget_inner_vertical"
+		android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+		<ImageButton android:id="@+id/PanelIcon" android:src="@drawable/solar_panels" 
+			style="@style/ButtonBackground" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_gravity="right|center_vertical" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_height="32dp" android:layout_width="32dp" android:maxHeight="32dp" android:maxWidth="32dp"></ImageButton>
+		<ImageButton android:src="@drawable/gear" android:id="@+id/ConfigIcon" 
+			style="@style/ButtonBackground" android:adjustViewBounds="true" android:scaleType="fitCenter" android:maxHeight="16dp" android:maxWidth="16dp" android:layout_height="16dp" android:layout_width="16dp" android:layout_gravity="bottom|right" android:layout_marginTop="10dp"></ImageButton>
+	</LinearLayout>
+
+</LinearLayout>
